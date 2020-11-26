@@ -1,0 +1,4 @@
+.vs
+LogUploadService/bin
+LogUploadService/obj
+LogUploadService/appsettings.user.json
