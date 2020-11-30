@@ -46,7 +46,7 @@ namespace LogUploadService
                     watcher.Filter = $"*.{fileExtension}";
 
                     // Add event handlers.
-                    watcher.Created += OnChanged;
+                    watcher.Renamed += OnChanged;
 
                     // Begin watching.
                     watcher.EnableRaisingEvents = true;
