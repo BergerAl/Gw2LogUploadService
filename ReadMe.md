@@ -3,7 +3,7 @@
 This project is just a simple service to upload you GW2 arc logs automatically to [dps.report](https://dps.report/). It is a simple project and I'm thankful for every
 feedback.
 
-![.github/workflows/dotnet-core.yml](https://github.com/BergerAl/Gw2LogUploadService/workflows/.github/workflows/dotnet-core.yml/badge.svg?branch=master)
+![.NET Core build](https://github.com/BergerAl/Gw2LogUploadService/workflows/.NET%20Core/badge.svg?branch=master)
 
 ## Configuration
 
