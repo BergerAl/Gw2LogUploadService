@@ -3,6 +3,8 @@
 This project is just a simple service to upload you GW2 arc logs automatically to [dps.report](https://dps.report/). It is a simple project and I'm thankful for every
 feedback.
 
+![.github/workflows/dotnet-core.yml](https://github.com/BergerAl/Gw2LogUploadService/workflows/.github/workflows/dotnet-core.yml/badge.svg?branch=master)
+
 ## Configuration
 
 The configuration happens via the [appsettings.json](.\LogUploadService\appsettings.json) ant the names below should be very intuitive. Just change `directoryName`, `userName` and `webhookURL` and the service should work.
