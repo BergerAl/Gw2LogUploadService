@@ -31,8 +31,8 @@ jobs:
         # A file, directory or wildcard pattern that describes what to upload
         path: LogUploadService/bin/Release/netcoreapp3.1/
         # The desired behavior if no files are found using the provided path.
-    - task: GithubRelease@0 
-      displayName: 'Create GitHub Release'
+    - name: 'Create GitHub Release'
+      uses: GithubRelease@0 
       condition: startsWith(variables['Build.SourceBranch'], 'refs/remotes/origin/master')      
       inputs:
         gitHubConnection: BergerAl
