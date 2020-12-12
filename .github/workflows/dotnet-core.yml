@@ -23,9 +23,10 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Zip Artifact
+      run: zip -r Gw2LogUploader.zip .
     - name: Create Release
       id: create_release
-      run: zip -r Gw2LogUploader.zip LogUploadService/bin/Release/netcoreapp3.1/
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
