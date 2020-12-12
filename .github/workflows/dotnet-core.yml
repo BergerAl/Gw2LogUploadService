@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Zip Artifact
-      run: zip -r Gw2LogUploader.zip .
+      run: zip -r Gw2LogUploader.zip LogUploadService/obj/Release/netcoreapp3.1/
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -42,6 +42,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: .Gw2LogUploader.zip
+        asset_path: ./Gw2LogUploader.zip
         asset_name: Gw2LogUploader.zip
         asset_content_type: application/zip
