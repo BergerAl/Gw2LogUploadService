@@ -1,6 +1,9 @@
 name: .NET Core build
 
 on:
+  create:
+    tags:
+      - '*'
   push:
     branches: [ master ]
   pull_request:
