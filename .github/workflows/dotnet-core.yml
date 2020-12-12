@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Zip Artifact
-      run: zip -r Gw2LogUploader.zip LogUploadService/obj/Release/netcoreapp3.1/
+      run: zip -r Gw2LogUploader.zip LogUploadService/bin/Release/netcoreapp3.1/
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
